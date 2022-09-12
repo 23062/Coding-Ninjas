@@ -1,0 +1,21 @@
+Print the following pattern for the given N number of rows.
+Pattern for N = 3
+ A
+ BB
+ CCC
+ 
+ _________________________________________________________________
+ 
+n = int(input())
+i = 1
+k = 65
+
+while i<=n:
+    j = 1
+    while j<=i:
+        print(chr(k),end='')
+        j = j+1
+        
+    print()
+    i = i+1
+    k = k+1
